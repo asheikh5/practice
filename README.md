@@ -1,6 +1,6 @@
 # Aliya Sheikh
 
-![GitHub Logo](/images/IMG_5803.JPG)
+![Logo](/images/IMG_5803.JPG)
 Format: ![Alt Text](url)
 
 ![United Logo](/images/united.jpg)
@@ -29,3 +29,4 @@ Format: ![Alt Text](url)
 Format: ![Alt Text](url)
 ![badges-3 Logo](/images/badges-3.JPG)
 Format: ![Alt Text](url)
+
