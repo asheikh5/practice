@@ -1,6 +1,6 @@
 # Aliya Sheikh
 
-![GitHub Logo](/images/IMG_5803.JPG)
+![Logo](/images/IMG_5803.JPG)
 Format: ![Alt Text](url)
 
 # Where are you from?
