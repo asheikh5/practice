@@ -1,11 +1,9 @@
 # Aliya Sheikh
 
-![Logo](/images/IMG_5803.JPG)
-Format: ![Alt Text](url)
+![My Profile](/images/IMG_5803.JPG)
+
 
 ![United Logo](/images/united.jpg)
-Format: ![Alt Text](url)
-
 
 # Where are you from?
 I am from Indore, India
@@ -23,10 +21,10 @@ I am from Indore, India
 * I also enjoy watching Tennis and Footbal and my all time favourite team is **Manchester United! GGMU!!**
 
 # Git Tutorial
-![badges-1 Logo](/images/badges-1.JPG)
-Format: ![Alt Text](url)
-![badges-2 Logo](/images/badges-2.JPG)
-Format: ![Alt Text](url)
-![badges-3 Logo](/images/badges-3.JPG)
-Format: ![Alt Text](url)
+![badges-1 Logo](/images/badges-1.jpg)
+
+![badges-2 Logo](/images/badges-2.jpg)
+
+![badges-3 Logo](/images/badges-3.jpg)
+
 
