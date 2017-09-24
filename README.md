@@ -1,30 +1,72 @@
-# Aliya Sheikh
+# Phase-3!
 
-![My Profile](/images/IMG_5803.JPG)
+# Results
+![Results](images/results.png)
 
+# Steps
 
-![United Logo](/images/united.jpg)
+* **Copy all the files(.sh, .java and 9091, 9293) to Vagrant box(itmd-521/data)**
+	* exit vagrant
+	* download the files or clone it itmd-521/data folder
+	* vagrant plugin install vagrant-scp
+	* vagrant scp "./data/9091" default:/home/vagrant/
+	* vagrant scp "./data/9293" default:/home/vagrant/
+	* vagrant scp "./data/9293" default:/home/vagrant/
+	* vagrant scp "./data/mySql-setup.sh" default:/home/vagrant/
+	* vagrant scp "./data/dbCreation.sh" default:/home/vagrant/
+	* vagrant scp "./data/tblCreation.sh" default:/home/vagrant/
+	* vagrant scp "./data/insertDataTbleOne.java" default:/home/vagrant/
+	* vagrant scp "./data/insertDataTbleTwo.java" default:/home/vagrant/
+	* vagrant scp "./data/maxTemperatureTblOne.java" default:/home/vagrant/
+	* vagrant scp "./data/maxTemperatureTblTwo" default:/home/vagrant/
+	* vagrant up then do vagrant ssh
 
-# Where are you from?
-I am from Indore, India
+* **Install MYSQL**
+	* Run mySql-setup.sh
+		* Enter password when prompted as **root**
+		* sudo chmod +x mySql-setup.sh
+		* sudo ./mySql-setup.sh
+		
+* **Database Creation**
+	* Create Database
+		* sudo chmod +x dbCreation.sh
+		* sudo ./dbCreation.sh
+		
+	* Create Table
+		* sudo chmod +x tblCreation.sh
+		* sudo bash tblCreation.sh
 
-# IT Background
-* Bachelor's Degree in Information Technology
-* Worked as a System Engineer in Tata Consultancy Services for 3 years
-* I am a graduate student in Illinois Tech pursuing M.S. in ITM (specialization: Data Management)
-* Currently working as a **Software Engineer** in **Delta Dental of Michigan**
+* **Inserting Records in MYSQL table**
+	* Add MYSQL Driver
+		* sudo apt-get install mysql-client
+		* sudo apt-get install libmysql-java
+		* Add Classpath in **.bashrc**
+		* **export CLASPATH=$CLASSPATH:/usr/share/java/mysql.jar**
 
-
-# Something interesting about you
-* I am a huge **F.R.I.E.N.D.S** fan! I have watched it more than **10 Times!** 
-* I also love to draw cartoons. 
-* I also enjoy watching Tennis and Footbal and my all time favourite team is **Manchester United! GGMU!!**
-
-# Git Tutorial
-![badges-1 Logo](/images/badges-1.jpg)
-
-![badges-2 Logo](/images/badges-2.jpg)
-
-![badges-3 Logo](/images/badges-3.jpg)
-
-
+	* Create a class file
+		* hadoop com.sun.tools.javac.Main insertDataTbleOne.java
+		* hadoop com.sun.tools.javac.Main insertDataTbleTwo.java
+		
+	* Compile java file
+		* javac insertDataTbleOne.java
+		* javac insertDataTbleTwo.java
+		
+	* Run java file
+		* java insertDataTbleOne
+		* java insertDataTbleTwo
+		
+*  **Retrieve the highest temperature on record per year**
+	* Create a class file
+		* hadoop com.sun.tools.javac.Main maxTemperatureTblOne.java
+		* hadoop com.sun.tools.javac.Main maxTemperatureTblTwo.java
+		
+		
+	* Compile java file
+		* javac maxTemperatureTblOne.java
+		* javac maxTemperatureTblTwo.java
+		
+	* Run java file
+		* java maxTemperatureTblOne
+		* java maxTemperatureTblTwo
+		
+		
